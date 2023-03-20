@@ -1,5 +1,5 @@
 # Functional error handling in Kotlin using Arrow.kt library
-[https://arrow-kt.io]
+https://arrow-kt.io
 
 ## Either
 
