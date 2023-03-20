@@ -16,6 +16,7 @@ As a rule of thumb we model success with Either.Right and failure using Either.L
 ```
 
 [Order.kt - Validation with Either](src/main/kotlin/Order.kt)
+
 [EitherErrorHandlingTests.kt - Unit tests for Either](src/test/kotlin/EitherErrorHandlingTests.kt)
 
 ## Monadic chaining with Either
