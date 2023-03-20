@@ -1,4 +1,5 @@
-# Kotlin and error management using Arrow.kt library
+# Functional error handling in Kotlin using Arrow.kt library
+[https://arrow-kt.io]
 
 ## Either
 
@@ -43,3 +44,4 @@ Validated with accumulating errors instead fail-fast approach shown above.
 ```
 
 [CustomerValidator.kt - Validation with Validated](src/main/kotlin/CustomerValidator.kt)
+
