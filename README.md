@@ -1,4 +1,4 @@
-# Kotlin and error management using Arrow.kt library``
+# Kotlin and error management using Arrow.kt library
 
 ## Either
 
@@ -15,8 +15,8 @@ As a rule of thumb we model success with Either.Right and failure using Either.L
         }
 ```
 
-[a relative link](src/main/kotlin/Order.kt)
-[a relative link](src/test/kotlin/EitherErrorHandlingTests.kt)
+[Order.kt - Validation with Either](src/main/kotlin/Order.kt)
+[EitherErrorHandlingTests.kt - Unit tests for Either](src/test/kotlin/EitherErrorHandlingTests.kt)
 
 ## Monadic chaining with Either
 
@@ -29,6 +29,8 @@ As a rule of thumb we model success with Either.Right and failure using Either.L
 
 ## Validated
 
+Validated with accumulating errors instead fail-fast approach shown above.
+
 ```kotlin
     fun Customer.validateErrors(): ValidatedNel<CustomerValidationError, Customer> =
         validateEmail().zip(
@@ -39,5 +41,4 @@ As a rule of thumb we model success with Either.Right and failure using Either.L
         ) { _, _ -> this }.handleErrorWith { CustomerValidationError.InvalidCustomer(it).invalidNel() }
 ```
 
-[a relative link](src/main/kotlin/CustomerValidator.kt)
-[a relative link](src/main/kotlin/CustomerValidationError.kt)
+[CustomerValidator.kt - Validation with Validated](src/main/kotlin/CustomerValidator.kt)
