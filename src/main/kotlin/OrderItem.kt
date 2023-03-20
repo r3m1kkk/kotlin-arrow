@@ -1,0 +1,1 @@
+data class OrderItem(val productCode: String, val unitPrice: Double, val quantity: Int)
